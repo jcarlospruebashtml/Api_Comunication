@@ -10,7 +10,8 @@ function inicio(){
 }
 function lectura(){
 	ruta="texto.txt";
-	solicitud=new XMLHttpRequest().addEventListener("load",function(event){
+	solicitud=new XMLHttpRequest();
+	solicitud.addEventListener("load",function(event){
 		zonadatos.innerHTML=event.target.responseText;},false);
 			solicitud.open("GET",ruta,true);
 			solicitud.send(null);	
