@@ -32,7 +32,7 @@ function estado_barra(event){
 	var porcentage=parseInt(event.loaded/event.total*100);
 	var barraProgreso=zonadatos.querySelector("progress");
 		barraProgreso.value=porcentage;
-		zonaprogreso.innerHTML=porcentage + " %";
+		zonaprogreso.innerHTML=porcentage + " % descargado";
 }
 	
 function mostrar(event){
